@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week2-assignment#1 - Stylesheet 3</title>
+    <style>
+        body {
+            font-family: "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "Segoe UI Rounded", sans-serif;
+            margin: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* nav top */
+        .div_navtop h2 {
+            color: #4CAF50;
+            margin: 0;
+            font-size: 32px;   /* 메인 타이틀 */
+            font-weight: 800;  /* extra-bold */
+        }
+        .div_navtop_content {
+            margin-top: 5px;
+            font-size: 17px;
+        }
+
+        /* 메뉴바 */
+        .div_leftcontent ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 20px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .div_leftcontent ul li {
+            flex: 1;
+            text-align: center;
+            background-color: #555;
+            color: white;
+            padding: 6px 0;   /* 상하 크기 줄임 */
+            margin: 0 3px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+        .div_leftcontent ul li.active {
+            background-color: #4CAF50;
+            font-weight: 700;
+        }
+
+        /* 본문 */
+        .div_centercontent h2 {
+            color: #4CAF50;
+            margin-top: 0;
+            font-size: 28px;
+            font-weight: 700;  /* bold */
+        }
+        .div_centercontent h3 {
+            color: #4CAF50;
+            font-size: 24px;
+            font-weight: 600;  /* semi-bold */
+        }
+        .div_centercontent p, .div_centercontent div {
+            font-size: 17px;
+        }
+
+        /* 사이드바 */
+        .div_rightcontent {
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 14px;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        .div_rightcontent h4 {
+            color: #4CAF50;
+            margin-top: 0;
+            font-size: 20px;
+            font-weight: 700;  /* bold */
+        }
+
+        /* footer */
+        .div_footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav top -->
+    <div class="div_navtop">
+        <h2>Welcome to 이석호's Homepage (22201043)</h2>
+        <div class="div_navtop_content">Use the menu to select different Stylesheets</div>
+    </div>
+
+    <!-- 메뉴바 -->
+    <div class="div_leftcontent">
+        <ul>
+            <li>Stylesheet 1</li>
+            <li>Stylesheet 2</li>
+            <li class="active">Stylesheet 3</li>
+            <li>Stylesheet 4</li>
+            <li>No Stylesheet</li>
+        </ul>
+    </div>
+
+    <!-- 본문 -->
+    <div class="div_centercontent">
+        <h2>Same Page Different Stylesheets</h2>
+        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. 
+        You can change the layout of this page by selecting different stylesheets in the menu, or by selecting
+        one of the following links:</p>
+        <div>
+            <a href="./style1.html">Stylesheet1</a>,
+            <a href="./style2.html">Stylesheet2</a>,
+            <a href="./style3.html">Stylesheet3</a>,
+            <a href="./style4.html">Stylesheet4</a>.
+        </div>
+
+        <h3>No Styles</h3>
+        <p>This page uses DIV elements to group different sections of the HTML page. 
+        Click here to see how the page looks like with no stylesheet:</p>
+        <div>
+            <a href="./index.html">No Stylesheet</a>.
+        </div>
+
+        <!-- 사이드바 -->
+        <div class="div_rightcontent">   
+            <h4>Side-Bar</h4>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+            ut laoreet dolore magna aliquam erat volutpat.
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="div_footer">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+        lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+        esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+    </div>    
+</body>
+</html>
