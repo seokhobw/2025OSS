@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resize</title>
+  <style>
+
+img{
+    max-width: 100px;
+    height:auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    div.example {
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+    }
+
+    .example1 {
+      font-size: 30px;
+      background-color: aquamarine;
+    }
+
+    .example2 {
+      font-size: 50px;
+      background-color: pink;
+    }
+
+    .example3 {
+      font-size: 80px;
+      background-color: yellowgreen;
+    }
+  </style>
+  <!-- jQuery 불러오기 (CDN) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="example">
+    화면 크기 감지 중...
+  </div>
+
+  <script>
+    function updateExample() {
+      let width = window.innerWidth;
+
+      if (width > 600) {
+        $(".example").removeClass("example1 example2").addClass("example3").text("1 화면");
+      } else if (width > 450) {
+        $(".example").removeClass("example1 example3").addClass("example2").text("2 화면");
+      } else {
+        $(".example").removeClass("example2 example3").addClass("example1").text("3 화면");
+      }
+    }
+
+    updateExample();
+
+    window.addEventListener("resize", updateExample);
+  </script>
+</body>
+</html>

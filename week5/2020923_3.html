@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Example</title>
+  <style>
+    div.example {
+      font-size: 80px;
+      background-color: green;
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    @media (min-width: 601) {
+        div.example {
+          font-size: 50px;
+          background-color: yellowgreen;
+        }
+      }
+
+      @media (min-width: 451px) and (max-width: 600px) {
+        div.example {
+          font-size: 50px;
+          background-color: pink;
+        }
+      }
+
+    @media (min-width: 0px) and (max-width: 450px) {
+      div.example {
+        font-size: 30px;
+        background-color: aquamarine;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="example">
+    example
+  </div>
+
+  <script>
+    let width= window.innerWidth;
+    
+    if(width>600){
+        $(".example").addClass("example3")
+    }else if(width>450){
+        $(".example").addClass("example2")
+    }else{
+        $(".example").addClass("example1")
+    }
+    
+  </script>
+</body>
+</html>
